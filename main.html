@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>독일</title>
+        <link type="text/css" rel="stylesheet" href="main.css">
+
+    </head>
+    <body>  
+        <!----------------------header---------------------->
+        <header>
+            <div id ='header_logo'>
+                <img src='img/main/logo.png' height="50px">
+            </div>
+            <a href="#content_city_title" id = 'header_city'> </a>
+            <a href="#content_festival" id = 'header_festival'></a>
+           
+            <a href="login.html" id = 'header_login'></a>
+            <div id='clear'></div>
+        </header>
+
+        <!----------------------main_img---------------------->
+        <section id = 'main_img'>
+            <div id = 'main_img_text'>
+                독일
+            </div>
+        </section>
+
+        <!----------------------main_content---------------------->
+        <section id = 'main_content'>
+            <!----------------------city---------------------->
+            <br><br>
+            <div id='content_city_title'>주요 도시</div>
+            <hr>
+            <div id='city1'>
+                <div id='city_title'>베를린</div>
+                <a href='city_Berlin.html' target='_blank'><div id='city_button'>더보기</div></a>
+            </div>
+            <div id='city2'>    
+                <div id='city_title'>뮌헨</div>
+                <a href='city_Munich.html ' target='_blank'><div id='city_button'>더보기</div></a>
+            </div>
+            <div id='clear'></div>
+            <div id='city3'>
+                <div id='city_title'>프랑크푸르트</div>
+                <a href='city_Frankfurt.html' target='_blank'><div id='city_button'>더보기</div></a>
+            </div>
+            <div id='city4'>
+                <div id='city_title'>쾰른</div>
+                <a href='city_ Cologne.html' target='_blank'><div id='city_button'>더보기</div></a>
+            </div>
+            <div id='clear'></div>
+            <!----------------------festival---------------------->
+            <div id='content_festival'>
+                <div id='festival_Main'>
+                    <div id='festival_main_title'>축제</div>
+                    <p id="festival_main_string">클릭해서 스크롤</p>
+                </div>
+                <div id='festival_Murnberg'>
+                    <div id='festival_title'>Nürnberg<br>Christmas Market<br></div>
+                        <p id="festival_string"><br>매년 11월 말부터 열리는 독일의 3대 크리스마스 마켓 중 하나입니다.<br>
+                            아이들이 좋아할 장난감, 트리에 장식할 장신구 등 크리스마스 분위기를 한껏 살린 기념품이 가득 있죠!<br>
+                            뉘른베르크의 향토음식인 뉘른베르거 부어스트와 비스킷, 소시지 등 다양한 음식도 함께합니다.<br>
+                            크리스마스의 분위기와 어릴적 동심을 느끼고 싶은 사람을 위한 축제입니다.<br>
+                            크리스마스 당일은 축제가 열리지 않습니다. 가족들과 함께해야하니까요!    
+                        </p>
+                </div>
+                <div id='festival_3'>
+                    <div id='festival_title'>München<br>Oktoberfest<br></div>
+                    <p id="festival_string"><br>매년 9월 말부터 10월초까지 2주 동안 열리는 맥주 축제입니다.<br>
+                        축제 분위기가 물씬 나는 대관람차, 드롭 타워 등 놀이공원을 방풀케 하는 놀이기구들이 있습니다!<br>
+                        길게 늘어진 푸드트럭과 텐트에서는 프레첼, 핫도그, 슈바인학센 등 독일 전통 음식을 다양하게 만날 수 있죠<br>
+                        크리스마스 마켓이 아이들을 위한 축제라면 옥토버페스트는 어른들을 위한 축제입니다.<br>
+                        매년 600만명이 찾아오는 축제인 만큼 숙박 예약은 필수입니다!
+                    </p>
+                </div>
+                <div id='festival_4'>
+                    <div id='festival_title'>Köln<br>Karneval<br></div>
+                    <p id="festival_string"><br>매년 11월 11일 11시 11분에 정확히 시작하는 축제입니다.<br>
+                        이 시간에 쾰른의 시민들은 쾰른이여, 영원하라!라는 뜻의 Kölle Alaaf를 외치며 축제가 시작됩니다.<br>
+                        카니발 단체 150여 개, 1만여 명, 차량 100대가 참가하는 엄청난 규모의 카니발 행진입니다!<br>
+                        이 기간동안 캐러멜 150t, 초콜릿 70만개, 장미꽃 30만 송이가 거리에 뿌려집니다.<br>
+                        쾰른의 자랑인 카니발 박물관에서는 쾰른의 방언으로 불린 카니발 음악을 들어볼 수 있습니다!
+                    </p>
+
+                </div>
+            </div>
+            <div id='clear'></div>
+        </section>
+
+        <!----------------------footer---------------------->
+        <footer>
+            <img id ="sch_logo" src="img/footer/sch_logo.jpg">
+            <p id="sch_text">[31538] 충남 아산시 신창면 순천향로 22 멀티미디어관  Dept.CSE No.20214004<br>
+                             COPYRIGHTⓒ 2021 SOONCHUNHYANG UNIVERSITY Web Programming
+            </p>
+        </footer>
+
+
+        <!----------------------To_Top---------------------->
+        
+        <a href="#header_logo">
+            <div id='Top_menu'></div>
+        </a>
+
+
+        <!----------------------javascript---------------------->
+        <script>
+            var rotation = 0;
+            var ob = document.getElementById("content_festival");
+            function scrollRotate(){
+                rotation += 90;
+                if(rotation==360)
+                {
+                    rotation = 0;
+                }
+                
+                var image = document.getElementById("content_festival");
+                image.style.transform =  "rotateX("+rotation+"deg)";
+                
+            }
+            ob.addEventListener("click",scrollRotate)
+        </script>
+    </body>
+</html>

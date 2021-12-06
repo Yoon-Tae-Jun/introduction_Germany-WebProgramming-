@@ -1,0 +1,165 @@
+@keyframes fadein{
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a { text-decoration: none; color: black; }
+
+#main_image{
+        /* 애니메이션 */
+        animation-name: fadein;
+        animation-duration: 3s;
+    
+        /* 레이아웃 */
+        width: 100%;
+        height: 40vh;
+        display: table;
+    
+        /* 사진 */
+        background-image: url(img/city/munich-main.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        
+}
+
+#image_text{
+    display: table-cell;
+    vertical-align: middle;
+
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 1px 1px 4px black;
+}
+
+/*----------------------content_menu---------------------*/
+#content{
+    height: 5600px;
+}
+#content_top {
+    /* border-bottom: solid 1px black; */
+    width: 70%;
+    height: 50px;
+    /* margin: 0 15%; */
+    margin-left: 15%;
+    margin-top: 10px;
+}
+
+#top_one, #top_two{
+    float: left;
+    width: 8%;
+    height: 45px;
+    padding: 0 13px 0 13px;
+
+    
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#top_two{
+    margin-left: 10%;
+}
+
+#top_one:hover, #top_two:hover{
+    border-bottom: solid 5px lightslategray;
+}
+
+
+#content_text{
+    width: 70%;
+    height: 80px;
+    margin-left: 15%;
+    margin-top: 20px;
+    line-height: 3vh;
+    font-size: 20px;
+}
+
+.content_title{
+    margin-top: 5%;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#content_title2{
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 900;
+    color: navy;
+}
+
+.content_img{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#img_alexanderplatez{
+    background-image: url(img/city/berlin-alexanderplatz.jpg);
+}
+#img_brandenburg{
+    background-image: url(img/city/berlin-brandenburg-gate.jpg);
+}
+#img_reichstag{
+    background-image: url(img/city/berlin-reichstag-building.jpg);
+}
+#img_currywurst{
+    background-image: url(img/city/berlin-currywurst.jpg);
+}
+#img_pasbender{
+    background-image: url(img/city/berlin-pasbender.jpg);
+}
+
+#img_rittersport{
+    background-image: url(img/city/berlin-rittersport.jpg);
+}
+#content_hr{
+    margin-top: 15px;
+}
+
+
+footer{
+    width: 100%;
+    height: 130px;
+    margin-top: 10px;
+    border: solid 1px black;
+}
+#sch_logo{ 
+    float: left;
+    margin-top: 30px;
+    margin-left: 33%;
+    height: 80px;
+}
+#sch_text{
+    float: left;
+    margin-left: 10px;
+    margin-top: 50px;
+    color: gray;
+}
+
+#Top_menu{
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    top: 85%;
+    left: 90%;
+
+    border-radius: 50%;
+    
+    /* background-color: lightslategray; */
+    background-image: url(img/main/top.jpg);
+    background-size:contain ;
+}
